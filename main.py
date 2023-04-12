@@ -8,7 +8,7 @@ class LibraryManagement:
         self.master.geometry("400x400")
         self.master.config(bg='#708090')
         
-        self.dark_mode = False # Initialize dark mode to False
+        self.dark_mode = False 
 
         self.books = []
         self.lend_list = []
