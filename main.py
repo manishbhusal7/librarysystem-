@@ -94,14 +94,14 @@ class LibraryManagement:
     def add_book(self):
         book = self.add_book_entry.get()
         self.books.append(book)
-        messagebox.showinfo("Success", "Book added successfully")
+        messagebox.showinfo("Success", "Book added Completed ")
         self.add_book_entry.delete(0, tk.END)
 
     def remove_book(self):
         book = self.remove_book_entry.get()
         if book in self.books:
             self.books.remove(book)
-            messagebox.showinfo("Success", "Book removed successfully")
+            messagebox.showinfo("Success", "Book removed Completed")
         else:
             messagebox.showerror("Error", "Book not found")
         self.remove_book_entry.delete(0, tk.END)
@@ -111,7 +111,7 @@ class LibraryManagement:
         if book in self.books:
             self.lend_list.append(book)
             self.books.remove(book)
-            messagebox.showinfo("Success", "Book issued successfully")
+            messagebox.showinfo("Success", "Book issued Completed")
         else:
             messagebox.showerror("Error", "Book not found")
         self.issue_book_entry.delete(0, tk.END)
